@@ -67,9 +67,9 @@ window.dom = {
         } else if (arguments.length === 2) {
             if (typeof name === 'string') {
                 return node.style[name]
-            } else if (name instanceof object) {
+            } else if (name instanceof Object) {
                 for (let key in name) {
-                    node.style[key] = object[key]
+                    node.style[key] = name[key]
                 }
             }
         }
