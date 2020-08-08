@@ -63,7 +63,7 @@ window.dom = {
     },
     style(node, name, value) {
         if (arguments.length === 3) {
-            node.style = value
+            node.style[name] = value
         } else if (arguments.length === 2) {
             if (typeof name === 'string') {
                 return node.style[name]
