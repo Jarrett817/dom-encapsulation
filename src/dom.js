@@ -24,12 +24,8 @@ window.dom = {
         return node
     },
     empty(node) {
-        //const childNotes=node.childNotes
-        const {
-            childNodes
-        } = node
         const array = []
-        let x = childNodes.firstChild
+        let x = node.firstChild
         while (x) {
             array.push(dom.push(node.remove(x)))
             x = node.firstChild
